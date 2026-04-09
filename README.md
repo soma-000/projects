@@ -1,16 +1,16 @@
 # projects
 
-個人開発ワークスペース。Claude Codeを最大限に活用するための設定・ルール・スキルを管理しています。
+X（Twitter）自動化ツールの開発・運用と個人ブログ管理のワークスペース。
+Claude Codeを最大限に活用するための設定・ルール・スキルを管理しています。
 
 ## 構成
 
 ```
 .claude/
-├── rules/       # コーディング規約・セキュリティルール
+├── rules/       # セキュリティ・運用ルール
 ├── skills/      # 再利用可能なスキル
-├── commands/    # カスタムスラッシュコマンド（/plan, /review, /fix, /ship）
-├── agents/      # サブエージェント（reviewer など）
-└── hooks/       # 自動ガードレール
+├── commands/    # カスタムスラッシュコマンド（/plan, /review）
+└── agents/      # サブエージェント（reviewer など）
 repositories/    # 各プロジェクト（Gitリポジトリ）
 documents/       # ドキュメント・メモ
 tasks/           # スケジュール実行タスク定義
@@ -27,8 +27,6 @@ tasks/           # スケジュール実行タスク定義
 | コマンド | 説明 |
 |---|---|
 | `/plan` | 実装前の設計整理 |
-| `/review` | コードレビュー |
-| `/fix` | バグ修正テンプレート |
-| `/ship` | リリース前チェック |
+| `/review` | コード・スクリプトレビュー |
 | `/commit-message` | コミットメッセージ生成 |
 | `/pr-description` | PR説明文生成 |
